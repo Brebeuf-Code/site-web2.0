@@ -10,6 +10,14 @@
 
 }
 
+#qui-description{
+  margin-top: 5%;
+  margin-bottom: 5%;
+  /* font-weight: bold; */
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 #landing_button {
   position: relative;
   top:250px;
@@ -51,4 +59,8 @@ p{
 
 card{
   margin:2px;
+}
+
+.add_shadow{
+  text-shadow: 0px 0px 10px rgba(0,0,0, 255);
 }

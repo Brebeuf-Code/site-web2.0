@@ -31,6 +31,15 @@ def competitions():
 def projets():
     return render_template("projets.html")
 
+@app.route('/sociocode')
+@app.route('/codesprint')
+def codesprint():
+        return render_template("codesprint.html")
+
+@app.route('/services')
+def services():
+    return render_template("services.html")
+
 
 @app.route('/contact')
 def contact():

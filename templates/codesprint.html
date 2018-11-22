@@ -3,7 +3,6 @@
   <head>
     <title>Brébeuf Code</title>
     <link rel="icon" href="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/45360654_2072829132768732_2856319832146575360_n.png?_nc_cat=100&_nc_ht=scontent-lga3-1.xx&oh=9247c54041982c46d133089cfb93d6f9&oe=5C3EC119" />
-
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='main.css') }}">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
@@ -12,6 +11,48 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <style>
+
+    .top-codesprint {
+      height:100vh;
+      padding: 10%
+  color: white;
+  /* height: 900px; */
+  min-height: 100%;
+  width: 100%;
+  background-image:  linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("https://raw.githubusercontent.com/Brebeuf-Code/site-web2.0/master/static/brebufhx-3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+    #top {
+  color: white;
+  /* height: 900px; */
+  min-height: 100%;
+  width: 100%;
+  background-image:  linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("https://raw.githubusercontent.com/Brebeuf-Code/site-web2.0/master/static/FullSizeRender%20(7).jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+    .dropdown-container {
+  position: relative;
+}
+
+.dropdown-menu {
+  color: black;
+  position: absolute;
+  top: 100%; /* Bottom of button */
+  right: 0;
+  margin-left: -100px; /* More to the left */
+}
+</style>
+
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -56,37 +97,37 @@
       </div>
     </nav>
 
-    <div id="contact" style="padding:5%">
+     <div id="about" >
+
+       <div class="top-codesprint">
+
+         <h1 class="add_shadow" style="padding:5%; color:white">SocioCode</h1>
+
+         <h4 class="add_shadow" style="padding: 5%; color:white">Apprendre et bâtir.</h4>
+
+       </div>
 
 
+        <div class="container">
 
-      <div class="container-fluid">
-        <h1>Projets</h1>
-        <p><b>Ensemble de projets effectués par Brébeuf Code</p></b>
-        <div class="row" style="margin-top:5px;">
-          <div class="col-sm-6">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Coop Bécik</h5>
-                <p class="card-text">Aidez le Coop Bécik à développer un logiciel</p>
-                <a href="#" class="btn btn-outline-success">Je m'implique!</a>
-              </div>
-            </div>
+
+          <div id="qui-description";>
+            <h4>Le SocioCode est un événement unique où des individus créent une application pour un organisme communautaire.</h4>
           </div>
-          <div class="col-sm-6">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">BrebeufHx</h5>
-                <p class="card-text">Participez au deuxième hackathon du Collège Jean-de-Brébeuf</p>
-                <a href="https://www.brebeufhx.com/" class="btn btn-outline-success">Je participe!</a>
-              </div>
-            </div>
+          <div id="qui-description";>
+            <p>Le premier SocioCode aura lieu le dimahnce 2 décembre 2018 au Collège Jean-de-Brébeuf de 13h à 17h.</p>
+            <p>Si vous êtes un participant, vous n'avez qu'à donner votre présence sur <a href="https://www.facebook.com/events/2212923045648641/">notre événement Facebook</a>.</p>
+            <p>Si vous êtes un organisme, on vous prie de rentrer en contact avec nous.</p>
+
+
+            <br>
+
           </div>
         </div>
+      </div>
 
-    </div>
-
-
+      <center><a href="contact"
+         class="btn btn-outline-dark btn-lg">Nous joindre</a></center>
 
     <footer style="padding:50px;">
       <p>Copyright Brébeuf Code 2018</p>

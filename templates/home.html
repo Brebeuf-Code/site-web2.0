@@ -22,7 +22,7 @@
     .btn-primary:visited,
     .btn-primary:focus {
         background-color: rgba(0,0,0,0.5);
-        /* color: rgba(0,0,0,255); */
+        color: white;
         border-color: rgba(255,255,255,0);
     }
 
@@ -76,10 +76,7 @@
          filter: brightness(90%);
        }
 
-       .add_shadow{
-         text-shadow: 0px 0px 10px rgba(0,0,0, 255),  0px 0px 10px rgba(0,0,0, 255), 0px 0px 100px rgba(0,0,0, 255);
 
-       }
 
     </style>
   </head>
@@ -94,18 +91,31 @@
           <li class="nav-item">
             <a class="nav-link" href="qui">Qui-sommes nous?</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="rencontres">Rencontres</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="ressources">Ressources</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="competitions">Compétitions</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="projets">Projets</a>
-          </li>
+
+          <div class="dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Événements
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="rencontres">Rencontres</a>
+              <a class="dropdown-item" href="https://www.brebeufhx.com">Hackathon</a>
+              <a class="dropdown-item" href="codesprint">SocioCode</a>
+              <a class="dropdown-item" href="competitions">Compétitions</a>
+
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Ressources
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="projets">Projets</a>
+              <a class="dropdown-item" href="ressources">Liens utiles</a>
+              <a class="dropdown-item" href="services">Services</a>
+            </div>
+          </div>
+
           <li class="nav-item">
             <a class="nav-link" href="contact">Contact</a>
           </li>
@@ -113,7 +123,6 @@
       </div>
     </nav>
 
-    <div id="top" style="padding:0%;">
 
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -129,7 +138,7 @@
             <img class="d-block w-100 carousel-img-brightness" src="https://raw.githubusercontent.com/Brebeuf-Code/site-web2.0/master/static/FullSizeRender%20(5).jpg" alt="First slide">
               <div class="carousel-caption add_shadow">
                 <h2 class="h3-responsive">Rencontres</h2>
-                <a class="btn btn-outline-light btn-lg">Joindre!</a>
+                <a class="btn btn-outline-light btn-lg" href="rencontres">Se joindre!</a>
               </div>
 
           </div>
@@ -139,7 +148,7 @@
             <img class="d-block w-100 carousel-img-brightness" src="https://raw.githubusercontent.com/Brebeuf-Code/site-web2.0/master/static/hx_photo.jpg" alt="Second slide">
             <div class="carousel-caption add_shadow">
               <h2 class="h3-responsive">Événements</h2>
-              <a class="btn btn-outline-light btn-lg">Assister!</a>
+              <a class="btn btn-outline-light btn-lg" href="qui">Assister!</a>
             </div>
 
           </div>
@@ -148,7 +157,7 @@
             <img class="d-block w-100" src="https://raw.githubusercontent.com/Brebeuf-Code/site-web2.0/master/static/hx_photo_2.jpg" alt="Third slide">
             <div class="carousel-caption add_shadow">
               <h2 class="h3-responsive">Projets</h2>
-              <a class="btn btn-outline-light btn-lg">S'impliquer!</a>
+              <a class="btn btn-outline-light btn-lg" href="projets">S'impliquer!</a>
             </div>
 
           </div>
@@ -157,7 +166,7 @@
             <img class="d-block w-100" src="https://raw.githubusercontent.com/Brebeuf-Code/site-web2.0/master/static/FullSizeRender%20(6).jpg" alt="Third slide">
             <div class="carousel-caption add_shadow">
               <h2 class="h3-responsive">Compétitions</h2>
-              <a class="btn btn-outline-light btn-lg">Se lancer!</a>
+              <a class="btn btn-outline-light btn-lg" href="competitions">Se lancer!</a>
             </div>
 
           </div>
@@ -173,9 +182,9 @@
         </a>
       </div>
 
-     </div>
 
-     <div id="about" style="padding:5%">
+
+     <div id="about" style="padding:5%; margin-top: 5%;" >
         <div class="container-fluid">
           <div class="row">
             <h1>Brébeuf Code, qu'est-ce?</h1>

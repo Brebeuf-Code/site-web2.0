@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Brébeuf Code</title>
-    
+
    <link rel="icon" href="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/45360654_2072829132768732_2856319832146575360_n.png?_nc_cat=100&_nc_ht=scontent-lga3-1.xx&oh=9247c54041982c46d133089cfb93d6f9&oe=5C3EC119" />
 
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='main.css') }}">
@@ -25,18 +25,31 @@
           <li class="nav-item">
             <a class="nav-link" href="qui">Qui-sommes nous?</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="rencontres">Rencontres</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="ressources">Ressources</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="competitions">Compétitions</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="projets">Projets</a>
-          </li>
+
+          <div class="dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Événements
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="rencontres">Rencontres</a>
+              <a class="dropdown-item" href="https://wwww.brebeufhx.com">Hackathon</a>
+              <a class="dropdown-item" href="codesprint">SocioCode</a>
+              <a class="dropdown-item" href="competitions">Compétitions</a>
+
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Ressources
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="projets">Projets</a>
+              <a class="dropdown-item" href="ressources">Liens utiles</a>
+              <a class="dropdown-item" href="services">Services</a>
+            </div>
+          </div>
+
           <li class="nav-item">
             <a class="nav-link" href="contact">Contact</a>
           </li>
@@ -81,7 +94,7 @@
               </div>
             </div>
         </div>
-      
+
       </div>
 
 
